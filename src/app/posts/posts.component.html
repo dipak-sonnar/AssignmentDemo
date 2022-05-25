@@ -1,5 +1,4 @@
-
-<mat-spinner *ngIf ="showSpinner"></mat-spinner>
+<mat-spinner *ngIf="showSpinner"></mat-spinner>
 <div *ngIf="posts">
     <div *ngFor="let post of (showAllFlag ? posts : posts.slice(0,3))">
         <div class="flex-container">
