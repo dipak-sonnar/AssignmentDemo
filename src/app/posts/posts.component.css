@@ -1,0 +1,12 @@
+.user-section {
+    background-color:#4646b6;
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+    border: 2px solid;
+    overflow:hidden;
+}
+
+.flex-container {
+    display: flex;
+}

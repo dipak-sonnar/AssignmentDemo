@@ -1,0 +1,8 @@
+.button-row {
+    display: table-cell;
+    width: auto;
+  }
+  
+  .button-margin {
+      margin: 5px;
+  }

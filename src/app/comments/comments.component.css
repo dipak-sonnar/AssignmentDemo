@@ -1,0 +1,12 @@
+.coment-section {
+    background-color:#a3a3b9;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+    border: 2px solid;
+    overflow:hidden;
+}
+
+.flex-container {
+    display: flex;
+}

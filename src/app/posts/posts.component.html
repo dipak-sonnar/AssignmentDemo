@@ -1,0 +1,19 @@
+
+<mat-spinner *ngIf ="showSpinner"></mat-spinner>
+<div *ngIf="posts">
+    <div *ngFor="let post of (showAllFlag ? posts : posts.slice(0,3))">
+        <div class="flex-container">
+            <div class="user-section">
+                <p>{{ post.title }}</p>
+                <p>{{post.body}}</p>
+            </div>
+            <div>
+                <button mat-mini-fab color="accent" [routerLink]="['/comments', post.id]">
+                    <mat-icon>plus_one</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button mat-raised-button color="primary" (click)="loadAll()"> Load All</button>
+</div>

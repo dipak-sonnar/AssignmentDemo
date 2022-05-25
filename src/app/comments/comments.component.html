@@ -1,0 +1,9 @@
+<mat-spinner *ngIf ="showSpinner"></mat-spinner>
+<div *ngFor="let comment of comments">
+    <div class="flex-container">
+        <div class="coment-section">
+            <p>{{ comment.name }}</p>
+            <p>{{comment.body}}</p>
+        </div>
+    </div>
+</div>

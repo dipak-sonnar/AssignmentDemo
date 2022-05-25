@@ -1,0 +1,6 @@
+<p>Please select a user to find their posts: </p>
+<mat-spinner *ngIf ="showSpinner"></mat-spinner>
+<div class="button-row">
+    <button  *ngFor="let user of users" mat-raised-button color="primary" class="button-margin"
+     [routerLink]="['/posts', user.id]" >{{user.name}}</button>
+</div>
